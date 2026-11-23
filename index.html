@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090711">
+  <title>ToolNest — Free Online Tools for Everyday Tasks</title>
+  <meta name="description" content="Use fast, free online tools for text, images, calculators and productivity. No sign-up required.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://YOUR-DOMAIN.example/">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ToolNest home"><span class="brand-mark">T</span><span>Tool<span class="brand-accent">Nest</span></span></a>
+    <nav class="desktop-nav"><a href="#tools">Explore tools</a><a href="#why">Why ToolNest</a><a href="about.html">About</a></nav>
+    <a class="header-cta" href="#tools">Explore tools <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="live-dot"></span> YOUR EVERYDAY DIGITAL TOOLKIT</div>
+      <h1>Small tasks.<br><span class="gradient-text">Done brilliantly.</span></h1>
+      <p class="hero-copy">A thoughtfully simple collection of free online tools. Get things done in seconds — no account, no fuss.</p>
+      <div class="hero-actions"><a class="button button-primary" href="#tools">Explore all tools <span>→</span></a><a class="button button-quiet" href="#why">Why ToolNest?</a></div>
+      <div class="hero-proof"><span><b>✦</b> Free to use</span><span><b>⌁</b> Works in your browser</span><span><b>◈</b> No sign-up</span></div>
+      <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+    </section>
+
+    <section class="tools-section section-wrap" id="tools">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE TOOL LIBRARY</div><h2>What do you need <span class="gradient-text">to do?</span></h2><p>Pick a tool and get straight to work.</p></div>
+        <div class="search-box"><span>⌕</span><input id="toolSearch" type="search" placeholder="Search tools..." aria-label="Search tools"></div>
+      </div>
+      <div class="category-row" role="group" aria-label="Filter tools">
+        <button class="filter-chip active" data-filter="all">All tools <span>12</span></button>
+        <button class="filter-chip" data-filter="text">Text</button>
+        <button class="filter-chip" data-filter="image">Image</button>
+        <button class="filter-chip" data-filter="calculators">Calculators</button>
+        <button class="filter-chip" data-filter="utility">Utilities</button>
+      </div>
+
+      <div class="tool-grid" id="toolGrid">
+        <article class="tool-card" data-category="text" data-search="word counter character sentence count text">
+          <div class="tool-icon icon-purple">Aa</div><div class="tool-tag">TEXT</div><h3>Word Counter</h3><p>Count words, characters, sentences and reading time.</p><button class="card-link" data-open="word">Open tool <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="text" data-search="case converter uppercase lowercase title sentence">
+          <div class="tool-icon icon-pink">Aa</div><div class="tool-tag">TEXT</div><h3>Case Converter</h3><p>Switch text between uppercase, lowercase and title case.</p><button class="card-link" data-open="case">Open tool <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="utility" data-search="qr code generator url link">
+          <div class="tool-icon icon-blue">▦</div><div class="tool-tag">UTILITY</div><h3>QR Code Generator</h3><p>Turn a link or short message into a scannable QR code.</p><button class="card-link" data-open="qr">Open tool <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="image" data-search="image compressor reduce file size jpg png webp">
+          <div class="tool-icon icon-orange">▧</div><div class="tool-tag">IMAGE</div><h3>Image Compressor</h3><p>Reduce image file size right in your browser.</p><button class="card-link" data-open="compress">Open tool <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="image" data-search="image resizer resize dimensions width height">
+          <div class="tool-icon icon-cyan">◫</div><div class="tool-tag">IMAGE</div><h3>Image Resizer</h3><p>Resize an image to the dimensions you need.</p><button class="card-link" data-open="resize">Open tool <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="utility" data-search="password generator secure random strong">
+          <div class="tool-icon icon-green">⌑</div><div class="tool-tag">UTILITY</div><h3>Password Generator</h3><p>Create a strong random password in one click.</p><button class="card-link" data-open="password">Open tool <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="calculators" data-search="age calculator date of birth">
+          <div class="tool-icon icon-pink">◷</div><div class="tool-tag">CALCULATOR</div><h3>Age Calculator</h3><p>Calculate your age from your date of birth.</p><button class="card-link" data-open="age">Open tool <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="calculators" data-search="percentage calculator percent discount">
+          <div class="tool-icon icon-purple">%</div><div class="tool-tag">CALCULATOR</div><h3>Percentage Calculator</h3><p>Find percentages, percentage changes and discounts.</p><button class="card-link" data-open="percent">Open tool <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="text" data-search="duplicate line remover remove duplicates text">
+          <div class="tool-icon icon-blue">≡</div><div class="tool-tag">TEXT</div><h3>Duplicate Line Remover</h3><p>Remove repeated lines from a block of text.</p><button class="card-link" data-open="duplicates">Open tool <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="text" data-search="slug generator seo url permalink">
+          <div class="tool-icon icon-orange">/</div><div class="tool-tag">TEXT</div><h3>Slug Generator</h3><p>Create clean, readable, SEO-friendly URL slugs.</p><button class="card-link" data-open="slug">Open tool <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="text" data-search="remove line breaks newlines text">
+          <div class="tool-icon icon-cyan">↵</div><div class="tool-tag">TEXT</div><h3>Remove Line Breaks</h3><p>Join broken lines into a clean paragraph.</p><button class="card-link" data-open="breaks">Open tool <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="text" data-search="text sorter alphabetical sort lines">
+          <div class="tool-icon icon-green">↕</div><div class="tool-tag">TEXT</div><h3>Text Sorter</h3><p>Sort lines alphabetically, A–Z or Z–A.</p><button class="card-link" data-open="sort">Open tool <span>↗</span></button>
+        </article>
+      </div>
+      <div class="empty-state" id="emptyState" hidden>No tools match your search. Try another keyword.</div>
+    </section>
+
+    <section class="why-section section-wrap" id="why">
+      <div class="why-panel"><div class="eyebrow">MADE TO BE USEFUL</div><h2>Less friction.<br><span class="gradient-text">More getting-things-done.</span></h2><p>ToolNest is built around a simple idea: useful tools should be easy to find, easy to use and accessible to everyone.</p>
+        <div class="benefit-grid"><div><span>✦</span><b>Free by design</b><small>Use the tools without creating an account.</small></div><div><span>◉</span><b>Browser-first</b><small>Many tasks are processed on your device.</small></div><div><span>↗</span><b>Simple experience</b><small>Clear controls and fast results.</small></div></div>
+      </div>
+    </section>
+    <section class="bottom-cta section-wrap"><div><div class="eyebrow">YOUR TOOLKIT IS READY</div><h2>Find your next shortcut.</h2><p>Choose a tool above and make your next task a little easier.</p></div><a class="button button-primary" href="#tools">Browse tools <span>↑</span></a></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">T</span><span>Tool<span class="brand-accent">Nest</span></span></a><p>Useful tools. No unnecessary complexity.</p><div class="footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></div><small>© <span id="year"></span> ToolNest. Built to make everyday tasks easier.</small></footer>
+
+  <div class="modal-backdrop" id="toolModal" aria-hidden="true">
+    <section class="tool-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-top"><div><div class="eyebrow" id="modalCategory">TOOL</div><h2 id="modalTitle">Tool</h2></div><button class="close-modal" id="closeModal" aria-label="Close tool">×</button></div>
+      <div id="toolContent" class="tool-content"></div>
+      <div class="modal-note"><span>✦</span> ToolNest tools are provided free. Check your results before using them for important decisions.</div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
